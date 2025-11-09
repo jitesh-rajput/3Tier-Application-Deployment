@@ -1,4 +1,4 @@
-# three-tier-eks-iac
+# three-tier-Application-Deployment with Docker & Kubernetes
 
 # Prerequisite 
 
