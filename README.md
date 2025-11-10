@@ -1,7 +1,9 @@
 # three-tier-Application-Deployment with Docker & Kubernetes
 
-# Prerequisite 
+# Flow 
+<img width="1536" height="1024" alt="ChatGPT Image Nov 11, 2025, 01_25_59 AM" src="https://github.com/user-attachments/assets/1547618c-ca39-45a6-8429-03b948608f48" />
 
+# Prerequisite 
 **Install Kubectl**
 https://kubernetes.io/docs/tasks/tools/
 
