@@ -52,31 +52,6 @@ kubectl logs -f -n kube-system \
 
 
 # Buid Docker image :
-**For Mac:**
-
-```
-export DOCKER_CLI_EXPERIMENTAL=enabled
-aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/w8u5e4v2
-```
-
-Buid Front End :
-
-```
-docker buildx build --platform linux/amd64 -t workshop-frontend:v1 . 
-docker tag workshop-frontend:v1 public.ecr.aws/w8u5e4v2/workshop-frontend:v1
-docker push public.ecr.aws/w8u5e4v2/workshop-frontend:v1
-```
-
-
-Buid Back End :
-
-```
-docker buildx build --platform linux/amd64 -t workshop-backend:v1 . 
-docker tag workshop-backend:v1 public.ecr.aws/w8u5e4v2/workshop-backend:v1
-docker push public.ecr.aws/w8u5e4v2/workshop-backend:v1
-```
-
-**For Linux/Windows:**
 
 Buid Front End :
 
@@ -136,15 +111,3 @@ Finally create the final load balancer to allow internet traffic:
 kubectl apply -f full_stack_lb.yaml
 ```
 
-
-# Any issue with the pods ? check logs:
-kubectl logs -f POD_ID -f
-
-
-# Grafana setup 
-Username: admin
-Password: prom-operator
-
-Import Dashboard ID: 1860
-
-Exlore more at: https://grafana.com/grafana/dashboards/
