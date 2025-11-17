@@ -56,18 +56,18 @@ kubectl logs -f -n kube-system \
 Buid Front End :
 
 ```
-docker build -t workshop-frontend:v1 . 
-docker tag workshop-frontend:v1 public.ecr.aws/w8u5e4v2/workshop-frontend:v1
-docker push public.ecr.aws/w8u5e4v2/workshop-frontend:v1
+docker build -t frontend:v1 . 
+docker tag frontend:v1 public.ecr.aws/w8u5e4v2/frontend:v1
+docker push public.ecr.aws/w8u5e4v2/frontend:v1
 ```
 
 
 Buid Back End :
 
 ```
-docker build -t workshop-backend:v1 . 
-docker tag workshop-backend:v1 public.ecr.aws/w8u5e4v2/workshop-backend:v1
-docker push public.ecr.aws/w8u5e4v2/workshop-backend:v1
+docker build -t backend:v1 . 
+docker tag backend:v1 public.ecr.aws/w8u5e4v2/backend:v1
+docker push public.ecr.aws/w8u5e4v2/backend:v1
 ```
 
 
